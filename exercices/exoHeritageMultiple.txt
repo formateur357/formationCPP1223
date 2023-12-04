@@ -1,0 +1,23 @@
+Vous devez créer une hiérarchie de classes représentant différents types de périphériques multimédia. La structure doit être la suivante :
+
+1. Classe de Base MultimediaDevice :
+
+- Contient une méthode virtuelle displayInfo() qui affiche des informations de base sur le dispositif.
+
+2. Classes Intermédiaires Camera et Speaker :
+
+- Héritent virtuellement de MultimediaDevice.
+- Camera contient une méthode displayInfo() qui affiche des informations spécifiques à la caméra.
+- Speaker contient également une méthode displayInfo() pour des informations spécifiques au haut-parleur.
+
+3. Classe Finale SmartPhone :
+
+- Hérite de Camera et Speaker.
+- Doit résoudre l'ambiguïté causée par les méthodes displayInfo() des classes intermédiaires.
+- Doit implémenter sa propre version de displayInfo().
+
+4. Dans la fonction main :
+
+- Créez un objet de type SmartPhone.
+- Utilisez dynamic_cast pour convertir cet objet en Camera* et Speaker*, et appelez displayInfo() sur ces pointeurs.
+- Résolvez l'ambiguïté d'appel de displayInfo() via l'objet SmartPhone.
