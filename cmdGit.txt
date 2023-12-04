@@ -1,0 +1,8 @@
+git add -A
+git commit -m "message de commit"
+git pull 
+git push
+
+1er push : git push origin main
+
+cd FormationCPP1223;
