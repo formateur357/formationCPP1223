@@ -1,0 +1,28 @@
+Exercice sur les Smart Pointers en C++
+Objectif : Comprendre et appliquer les concepts des smart pointers en C++ pour la gestion de la mémoire.
+
+Contexte :
+Vous travaillez sur un projet de gestion d'une bibliothèque de livres. Chaque livre est représenté par une classe Livre contenant des informations telles que le titre et l'auteur. Votre tâche consiste à créer et gérer une collection de livres en utilisant différents types de smart pointers.
+
+Instructions :
+Création de la classe Livre :
+
+- Définissez une classe Livre avec des membres privés pour le titre (std::string) et l'auteur (std::string).
+- Ajoutez un constructeur approprié pour initialiser ces attributs.
+- Ajoutez une méthode d'affichage pour imprimer les informations du livre.
+
+Utilisation de std::unique_ptr :
+
+- Créez une instance de Livre en utilisant std::unique_ptr et initialisez-la avec des valeurs de votre choix.
+- Affichez les informations du livre en utilisant la méthode d'affichage.
+
+Utilisation de std::shared_ptr :
+
+- Créez plusieurs instances de Livre en utilisant std::shared_ptr.
+- Simulez le partage de ces instances entre plusieurs collections (par exemple, différentes bibliothèques).
+- Affichez le compte de références pour l'un des shared_ptr.
+
+Utilisation de std::weak_ptr :
+
+- Créez un std::weak_ptr à partir d'un des shared_ptr créés précédemment.
+- Démontrez comment vérifier si le weak_ptr pointe toujours sur un objet valide et comment y accéder.
