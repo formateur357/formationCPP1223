@@ -1,25 +1,27 @@
 #include <iostream>
 #include <fstream>
+#include <sstream>
 #include <vector>
 using namespace std;
 int main()
 {
-    vector<string> names;
-    vector<int> numbers;
+    vector<pair<string,int>> data;
     string line;
+    string name;
+    int number;
 
     fstream file;
-    file.open("inputFile.txt", ios_base::in);
+    file.open("C:\\Users\\william.bequetrennes\\Desktop\\Cours_cpp\\formationCPP1223\\rendu\\William\\inputFile.txt", ios_base::in);
     if(file.is_open())
     {
         cout << "Reading inputFile.txt" << endl;
         while (getline(file, line)) {
-            cout << "turn\n";
-            int n;
-            string s;
-            file >> s >> n;
-            names.push_back(s);
-            numbers.push_back(n);
+            cout << line << endl;
+            istringstream lstream(line);
+            if(lstream >> name >> number)
+            {
+                data.push_back(make_pair(name, number));
+            }
         }
         file.close();
     }
