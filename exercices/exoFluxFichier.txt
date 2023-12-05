@@ -1,0 +1,35 @@
+Exercice : Analyse et Résumé de Données de Fichier
+
+Objectif : Écrire un programme C++ qui réalise les tâches suivantes :
+
+- Lit des données depuis un fichier texte (input.txt) où chaque ligne contient un nom et un score séparés par un espace (par exemple, Alice 85).
+- Calcule le score moyen.
+- Écrit dans un nouveau fichier (output.txt) les noms de ceux dont le score est supérieur au score moyen, ainsi que leur score.
+- Imprime sur la console le nombre de personnes ayant un score supérieur à la moyenne.
+
+Structure du Fichier d'Entrée :
+
+Alice 85
+Bob 70
+Clara 90
+David 75
+
+Étapes Suggérées :
+1. Lecture du Fichier d'Entrée :
+
+- Utiliser ifstream pour ouvrir et lire le fichier input.txt.
+- Lire chaque ligne, extraire le nom et le score, et les stocker.
+
+2. Calcul du Score Moyen :
+
+- Calculer le score moyen de tous les scores lus.
+
+3. Écriture dans le Fichier de Sortie et Affichage sur la Console :
+
+- Utiliser ofstream pour ouvrir et écrire dans output.txt.
+- Parcourir les scores et écrire dans output.txt les noms et scores des personnes ayant un score supérieur à la moyenne.
+- Compter et afficher sur la console le nombre de ces personnes.
+
+4. Fermeture des Fichiers :
+
+- S'assurer de fermer les fichiers input.txt et output.txt.
