@@ -21,3 +21,23 @@ Vous devez créer une hiérarchie de classes représentant différents types de 
 - Créez un objet de type SmartPhone.
 - Utilisez dynamic_cast pour convertir cet objet en Camera* et Speaker*, et appelez displayInfo() sur ces pointeurs.
 - Résolvez l'ambiguïté d'appel de displayInfo() via l'objet SmartPhone.
+
+Énoncé de l'Exercice
+Dans cet exercice, vous allez étendre la hiérarchie de classes précédente en ajoutant des classes représentant différentes fonctionnalités d'un smartphone. L'objectif est de pratiquer l'héritage multiple, le polymorphisme et la gestion des relations complexes entre les classes.
+
+1. Ajoutez les Classes GPS et MusicPlayer :
+
+- GPS et MusicPlayer doivent hériter directement de MultimediaDevice.
+- Chacune de ces classes doit avoir sa propre méthode displayInfo() qui affiche des informations spécifiques.
+
+2. Classe Finale AdvancedSmartPhone :
+
+- Hérite de SmartPhone, GPS et MusicPlayer.
+- Doit implémenter sa propre version de displayInfo() qui intègre les informations de toutes ses classes de base.
+- Ajoutez une méthode activateFeature() qui active une fonctionnalité spécifique en fonction d'un paramètre (par exemple, "GPS" ou "Music").
+
+3. Dans la fonction main :
+
+- Créez un objet de type AdvancedSmartPhone.
+- Utilisez des pointeurs de type MultimediaDevice* pour démontrer le polymorphisme en appelant displayInfo() sur différentes fonctionnalités du - téléphone.
+- Testez la méthode activateFeature() avec différents paramètres.
