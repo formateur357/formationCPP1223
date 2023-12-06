@@ -1,0 +1,23 @@
+Pour installer la bibliothèque Boost en C++, les étapes varient en fonction de votre système d'exploitation. Voici une procédure générale :
+
+Téléchargement : Commencez par télécharger la dernière version de Boost depuis le site officiel Boost Downloads.
+
+Extraction : Une fois le téléchargement terminé, extrayez le fichier ZIP dans un répertoire de votre choix.
+
+Installation :
+
+Sous Windows :
+Vous pouvez utiliser un gestionnaire de paquets comme vcpkg ou conan pour installer Boost.
+Alternativement, ouvrez l'invite de commande et naviguez vers le répertoire où vous avez extrait Boost.
+Exécutez bootstrap.bat, puis .\b2 install pour compiler et installer les bibliothèques.
+Sous Linux/Mac :
+Ouvrez un terminal et naviguez vers le répertoire où vous avez extrait Boost.
+Exécutez ./bootstrap.sh, puis ./b2 install pour compiler et installer les bibliothèques.
+Vous pouvez avoir besoin de privilèges administrateur (utiliser sudo sur Linux/Mac) pour l'installation.
+Configuration de votre IDE ou compilateur :
+
+Assurez-vous que votre IDE ou compilateur est configuré pour inclure le chemin vers les en-têtes de Boost et, si nécessaire, les bibliothèques compilées.
+Pour les IDE comme Visual Studio, CLion, ou Code::Blocks, vous devrez peut-être configurer les chemins dans les paramètres du projet.
+Vérification :
+
+Pour vérifier que Boost est correctement installé, créez un programme de test qui inclut une en-tête Boost et compilez-le.
