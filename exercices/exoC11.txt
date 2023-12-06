@@ -35,3 +35,37 @@ Enoncé :
 
 -------------------------------------------------------------------------------------------------------
 
+Exercice 3 : Bibliothèque de Livres avec Gestion Avancée des Classes
+
+Objectif :
+
+- Développer une petite application de bibliothèque de livres qui utilise constexpr pour des calculs constants à la compilation, des littérales définies par l'utilisateur pour manipuler des données, et les mots-clés override et final pour gérer l'héritage de classes.
+
+Enoncé :
+
+Définir une Classe de Base Livre:
+
+- La classe Livre doit avoir des membres pour le titre (string), l'auteur (string), et le nombre de pages (int).
+- Inclure un constructeur approprié et des méthodes pour accéder à ces attributs.
+
+Classe Dérivée LivreAvecRésumé:
+
+- Créez une classe dérivée LivreAvecRésumé qui hérite de Livre et ajoute un résumé (string) comme attribut supplémentaire.
+- Override la méthode d'accès au titre pour y ajouter un suffixe "(avec résumé)".
+
+Utilisation de constexpr pour le Calcul des Coûts:
+
+- Définissez une fonction constexpr nommée calculCout qui calcule le coût d'un livre en fonction du nombre de pages (par exemple, coût par page).
+
+Littérales Définies par l'Utilisateur pour le Nombre de Pages:
+
+- Définissez une littérale utilisateur pour les pages, permettant d'écrire par exemple 150_p pour dénoter 150 pages.
+
+Utilisation des Mots-clés override et final:
+
+- Assurez-vous que les méthodes appropriées dans LivreAvecRésumé utilisent le mot-clé override.
+- Marquez la classe LivreAvecRésumé comme final.
+
+Point Bonus :
+
+- Ajoutez une interaction utilisateur pour créer un objet Livre ou LivreAvecRésumé, affichez les détails du livre, y compris le coût calculé.
