@@ -2,6 +2,7 @@
 #include <vector>
 #include <iostream>
 #include <map>
+#include <algorithm>
 
 using namespace std;
 
@@ -11,6 +12,7 @@ public:
     Book(int id, string title, string author);
     string toString();
     int getID();
+    string getTitle();
 
 private:
     int _id;
@@ -25,6 +27,10 @@ string Book::toString()
 int Book::getID()
 {
     return _id;
+}
+string Book::getTitle()
+{
+    return _title;
 }
 
 int main(int argc, char const *argv[])
@@ -42,6 +48,13 @@ int main(int argc, char const *argv[])
         map_books.insert(make_pair((*it).getID(), (*it)));
     }
     cout << "ID 1 = " << map_books.at(1).toString() << endl;
+
+    //////////////
+
+    sort(vec_books.begin(), vec_books.end(), [](Book a, Book b)
+    {
+        return a.getTitle() < b.getTitle();
+    });
 
     return 0;
 }
