@@ -97,47 +97,63 @@
 
 // -----------------------------------------------------------
 // Exo 4 => Format
-#include <boost/format.hpp>
-#include <iostream>
-#include <string>
-
-using namespace std;
-
-int main()
-{
-    string nom, prenom;
-    int age;
-
-    cout << "Entrez votre nom : ";
-    cin >> nom;
-
-    cout << "Entrez votre prenom : ";
-    cin >> prenom;
-
-    cout << "Entrez votre age : ";
-    cin >> age;
-
-    boost::format formatter("Bonjour, %1% %2%. Vous avez %3% ans.");
-    formatter % prenom % nom % age;
-    string message = formatter.str();
-
-    cout << message << endl;
-    return 0;
-}
-
-// -----------------------------------------------------------
-// Exo 5 => FileSystem 2
-// #include <boost/filesystem.hpp>
+// #include <boost/format.hpp>
 // #include <iostream>
+// #include <string>
 
-// void searchFiles(const boost::filesystem::path &root, const std::string &extension)
-// {
-// }
+// using namespace std;
 
 // int main()
 // {
+//     string nom, prenom;
+//     int age;
 
+//     cout << "Entrez votre nom : ";
+//     cin >> nom;
+
+//     cout << "Entrez votre prenom : ";
+//     cin >> prenom;
+
+//     cout << "Entrez votre age : ";
+//     cin >> age;
+
+//     boost::format formatter("Bonjour, %1% %2%. Vous avez %3% ans.");
+//     formatter % prenom % nom % age;
+//     string message = formatter.str();
+
+//     cout << message << endl;
 //     return 0;
 // }
+
+// -----------------------------------------------------------
+// Exo 5 => FileSystem 2
+#include <boost/filesystem.hpp>
+#include <iostream>
+
+void searchFiles(const boost::filesystem::path &root, const std::string &extension)
+{
+    if (!boost::filesystem::exists(root) || !boost::filesystem::is_directory(root))
+        return;
+
+    boost::filesystem::recursive_directory_iterator it(root);
+    boost::filesystem::recursive_directory_iterator endit;
+
+    while (it != endit)
+    {
+        if (boost::filesystem::is_regular_file(*it) && it->path().extension() == extension)
+        {
+            std::cout << it->path().filename() << std::endl;
+        }
+        ++it;
+    }
+}
+
+int main()
+{
+    boost::filesystem::path dir("test_directory");
+    searchFiles(dir, ".txt");
+
+    return 0;
+}
 
 // -----------------------------------------------------------
