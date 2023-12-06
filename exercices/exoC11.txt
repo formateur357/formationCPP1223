@@ -1,0 +1,35 @@
+Exercice 1 : Gestion Avancée de Conteneurs avec auto et enum class
+
+Objectif :
+
+- Utiliser enum class pour définir un type énuméré représentant différents types de fruits. Ensuite, créer un std::map pour stocker le prix de - chaque fruit et utiliser des boucles basées sur un intervalle avec le mot-clé auto pour itérer sur le map.
+
+Enoncé :
+
+- Définissez un enum class nommé Fruit avec au moins trois fruits différents (par exemple, Pomme, Banane, Orange).
+- Créez un std::map<Fruit, double> pour stocker le prix de chaque fruit.
+- Remplissez le map avec des valeurs pour chaque fruit.
+- Utilisez une boucle basée sur un intervalle et le mot-clé auto pour imprimer le nom et le prix de chaque fruit.
+
+Point Bonus :
+
+- Ajoutez une fonction lambda pour appliquer une réduction de 10% sur tous les fruits et mettez à jour les prix dans le map.
+
+--------------------------------------------------------------------------------------------------------------------------------
+Exercice 2 : Utilisation de std::tuple et constexpr
+
+Objectif :
+
+- Créer un std::tuple pour représenter les informations d'un livre (titre, auteur, nombre de pages) et utiliser une fonction constexpr pour calculer un aspect du livre (par exemple, le rapport texte/page).
+
+Enoncé :
+
+- Définissez un std::tuple pour stocker les informations d'un livre : titre (chaîne de caractères), auteur (chaîne de caractères) et nombre de pages (entier).
+- Créez une fonction constexpr nommée textDensity qui prend le nombre de pages et le nombre total de mots (entier) et calcule la densité de texte par page.
+- Initialisez un std::tuple avec des informations de livre spécifiques.
+- Utilisez la fonction textDensity pour calculer et afficher la densité de texte du livre.
+
+Point Bonus :
+
+- Ajoutez des interactions avec l'utilisateur pour permettre la saisie des informations du livre et du nombre total de mots, puis affichez le résultat de la densité de texte.
+
