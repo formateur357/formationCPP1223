@@ -1,0 +1,51 @@
+Exercice 1: Utilisation de Boost::lexical_cast
+
+Objectif : Convertir des chaînes de caractères en types numériques et vice versa.
+
+Énoncé :
+
+- Écrire un programme qui demande à l'utilisateur de saisir un nombre.
+- Convertir cette chaîne en entier à l'aide de boost::lexical_cast.
+- Multiplier ce nombre par 2 et l'afficher.
+- Convertir le résultat en chaîne de caractères et l'afficher.
+
+Exercice 2: Exploration de Boost::filesystem
+
+Objectif : Explorer les fonctions de base de la manipulation des fichiers et répertoires.
+
+Énoncé :
+
+- Écrire un programme qui crée un répertoire nommé "test_directory".
+- Vérifier si le répertoire existe.
+- Créer un fichier texte nommé "example.txt" dans ce répertoire.
+- Afficher le chemin absolu du fichier créé.
+
+Exercice 3: Utilisation de Boost::regex
+
+Objectif : Utiliser les expressions régulières pour valider des chaînes de caractères.
+
+Énoncé :
+
+- Écrire une fonction qui valide une adresse email à l'aide de boost::regex.
+- La fonction doit retourner true si l'adresse est valide, false sinon.
+- Tester cette fonction avec plusieurs adresses email, valides et invalides.
+
+Exercice 4: Découverte de Boost::format
+
+Objectif : Formater des chaînes de caractères de manière élégante.
+
+Énoncé :
+
+- Écrire un programme qui demande à l'utilisateur son nom, prénom et âge.
+- Utiliser boost::format pour afficher ces informations dans une phrase formatée, par exemple : "Bonjour, [Prénom] [Nom]. Vous avez [âge] ans."
+
+Exercice 5: Utilisation avancée de Boost::filesystem
+
+Objectif : Créer un utilitaire de recherche de fichiers.
+
+Énoncé :
+
+- Écrire un programme qui parcourt récursivement un répertoire donné.
+- Rechercher tous les fichiers qui correspondent à un motif spécifique (par exemple, tous les fichiers .txt).
+- Utiliser Boost::filesystem pour la gestion des chemins et la navigation dans les répertoires.
+- Afficher la liste des chemins de fichiers trouvés.
