@@ -2,7 +2,7 @@ Exercice 1 : Gestion Avancée de Conteneurs avec auto et enum class
 
 Objectif :
 
-- Utiliser enum class pour définir un type énuméré représentant différents types de fruits. Ensuite, créer un std::map pour stocker le prix de - chaque fruit et utiliser des boucles basées sur un intervalle avec le mot-clé auto pour itérer sur le map.
+- Utiliser enum class pour définir un type énuméré représentant différents types de fruits. Ensuite, créer un std::map pour stocker le prix de chaque fruit et utiliser des boucles basées sur un intervalle avec le mot-clé auto pour itérer sur le map.
 
 Enoncé :
 
@@ -29,7 +29,43 @@ Enoncé :
 - Initialisez un std::tuple avec des informations de livre spécifiques.
 - Utilisez la fonction textDensity pour calculer et afficher la densité de texte du livre.
 
-Point Bonus :
+// Point Bonus :
 
 - Ajoutez des interactions avec l'utilisateur pour permettre la saisie des informations du livre et du nombre total de mots, puis affichez le résultat de la densité de texte.
 
+-------------------------------------------------------------------------------------------------------
+
+Exercice 3 : Bibliothèque de Livres avec Gestion Avancée des Classes
+
+Objectif :
+
+- Développer une petite application de bibliothèque de livres qui utilise constexpr pour des calculs constants à la compilation, des littérales définies par l'utilisateur pour manipuler des données, et les mots-clés override et final pour gérer l'héritage de classes.
+
+Enoncé :
+
+Définir une Classe de Base Livre:
+
+- La classe Livre doit avoir des membres pour le titre (string), l'auteur (string), et le nombre de pages (int).
+- Inclure un constructeur approprié et des méthodes pour accéder à ces attributs.
+
+Classe Dérivée LivreAvecRésumé:
+
+- Créez une classe dérivée LivreAvecRésumé qui hérite de Livre et ajoute un résumé (string) comme attribut supplémentaire.
+- Override la méthode d'accès au titre pour y ajouter un suffixe "(avec résumé)".
+
+Utilisation de constexpr pour le Calcul des Coûts:
+
+- Définissez une fonction constexpr nommée calculCout qui calcule le coût d'un livre en fonction du nombre de pages (par exemple, coût par page).
+
+Littérales Définies par l'Utilisateur pour le Nombre de Pages:
+
+- Définissez une littérale utilisateur pour les pages, permettant d'écrire par exemple 150_p pour dénoter 150 pages.
+
+Utilisation des Mots-clés override et final:
+
+- Assurez-vous que les méthodes appropriées dans LivreAvecRésumé utilisent le mot-clé override.
+- Marquez la classe LivreAvecRésumé comme final.
+
+Point Bonus :
+
+- Ajoutez une interaction utilisateur pour créer un objet Livre ou LivreAvecRésumé, affichez les détails du livre, y compris le coût calculé.
