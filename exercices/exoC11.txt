@@ -2,7 +2,7 @@ Exercice 1 : Gestion Avancée de Conteneurs avec auto et enum class
 
 Objectif :
 
-- Utiliser enum class pour définir un type énuméré représentant différents types de fruits. Ensuite, créer un std::map pour stocker le prix de - chaque fruit et utiliser des boucles basées sur un intervalle avec le mot-clé auto pour itérer sur le map.
+- Utiliser enum class pour définir un type énuméré représentant différents types de fruits. Ensuite, créer un std::map pour stocker le prix de chaque fruit et utiliser des boucles basées sur un intervalle avec le mot-clé auto pour itérer sur le map.
 
 Enoncé :
 
@@ -29,7 +29,9 @@ Enoncé :
 - Initialisez un std::tuple avec des informations de livre spécifiques.
 - Utilisez la fonction textDensity pour calculer et afficher la densité de texte du livre.
 
-Point Bonus :
+// Point Bonus :
 
 - Ajoutez des interactions avec l'utilisateur pour permettre la saisie des informations du livre et du nombre total de mots, puis affichez le résultat de la densité de texte.
+
+-------------------------------------------------------------------------------------------------------
 
