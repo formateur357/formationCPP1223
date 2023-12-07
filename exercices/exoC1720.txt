@@ -1,0 +1,16 @@
+Exercice 1 - Utilisation des Ranges et des Lambdas (C++20)
+
+Objectif : Utilisez les ranges et les lambda expressions pour résoudre le problème suivant.
+
+Enoncé : Vous disposez d'un vecteur de nombres entiers. Utilisez les ranges pour filtrer les nombres impairs, puis utilisez une lambda expression pour les élever au carré. Enfin, calculez la somme des carrés des nombres impairs.
+
+Exercice 2 - Utilisation des Concepts (C++20)
+Objectif : Utilisez les concepts pour définir une fonction générique qui fonctionne avec des types numériques.
+
+Enoncé : Définissez un concept appelé "Numeric" qui vérifie si un type est numérique (entier ou flottant). Ensuite, utilisez ce concept pour créer une fonction générique qui fonctionne avec des types numériques uniquement. La fonction doit calculer la moyenne de deux valeurs passées en argument et retourner le résultat.
+
+
+Exercice 3 - Utilisation des Variants (C++17 et C++20)
+Objectif : Utilisez la classe std::variant pour créer une structure de données polymorphique et définissez une fonction qui visite la variante et effectue des opérations en fonction du type stocké.
+
+Enoncé : Créez une structure de données polymorphique à l'aide de std::variant qui peut contenir des entiers, des chaînes de caractères et des booléens. Écrivez ensuite une fonction qui visite la variante et effectue une opération différente en fonction du type stocké (par exemple, afficher un entier, une chaîne de caractères ou effectuer une opération booléenne). Testez la fonction avec différentes valeurs de la variante.
