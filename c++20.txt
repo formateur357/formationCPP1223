@@ -5,6 +5,7 @@ Vérifiez la Configuration du Kit de Qt Creator :
 
 Ouvrez votre projet dans Qt Creator.
 Dans le coin inférieur gauche de la fenêtre de Qt Creator, vous verrez un menu déroulant "Kit". Assurez-vous que le kit sélectionné est configuré pour utiliser un compilateur compatible C++17 ou C++20.
+
 Vérifiez les Paramètres du Fichier de Projet (.pro) :
 
 Ouvrez le fichier .pro de votre projet dans Qt Creator.
