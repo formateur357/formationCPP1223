@@ -1,0 +1,48 @@
+Titre de l'exercice : Calculator with Generic Operations
+
+Description :
+
+L'objectif de cet exercice est de créer une classe Calculator générique qui peut effectuer des opérations mathématiques de base (addition, soustraction, multiplication, division) ainsi que des opérations spécifiques pour les chaînes de caractères (std::string) et les vecteurs (std::vector). La classe Calculator doit être capable de gérer différents types de données de manière générique.
+
+Tâches à accomplir :
+
+1. Créez une classe générique Calculator qui prend un paramètre de type initial (T) lors de son instanciation.
+
+2. Implémentez les méthodes suivantes dans la classe Calculator :
+
+- add(T value) : Effectue une opération d'addition avec la valeur passée en argument.
+- subtract(T value) : Effectue une opération de soustraction avec la valeur passée en argument.
+- multiply(T value) : Effectue une opération de multiplication avec la valeur passée en argument.
+- divide(T value) : Effectue une opération de division avec la valeur passée en argument. Assurez-vous de gérer le cas de division par zéro.
+
+3. Ajoutez des méthodes spécifiques pour les types std::string et std::vector :
+
+- concat(const std::string& value) : Concatène la chaîne de caractères passée en argument à la valeur existante (spécifique à std::string).
+- append(const std::vector<T>& value) : Ajoute les éléments du vecteur passé en argument à la valeur existante (spécifique à std::vector).
+
+4. Créez une fonction main pour tester la classe Calculator avec différents types de données (entiers, doubles, chaînes de caractères et vecteurs d'entiers).
+
+5. Dans la fonction main, effectuez des opérations mathématiques et des opérations spécifiques (concat et append) en utilisant les instances de Calculator pour chaque type de données.
+
+6. Affichez les résultats des opérations à l'écran.
+
+Exemple :
+
+Voici un exemple d'utilisation de la classe Calculator :
+
+Calculator<int> intCalculator(0);
+intCalculator.add(5);
+intCalculator.subtract(3);
+intCalculator.printResult(); // Affiche le résultat entier : 2
+
+Calculator<std::string> stringCalculator("");
+stringCalculator.concat("Hello, ");
+stringCalculator.concat("world!");
+stringCalculator.printResult(); // Affiche le résultat de la chaîne : Hello, world!
+
+Calculator<std::vector<int>> vectorCalculator(std::vector<int>());
+std::vector<int> nums = {1, 2, 3};
+vectorCalculator.append(nums);
+vectorCalculator.printResult(); // Affiche le résultat du vecteur : 1 2 3
+
+Assurez-vous de gérer les exceptions et d'afficher des messages d'erreur appropriés, notamment lorsqu'une division par zéro est tentée ou lorsqu'une opération inappropriée est effectuée sur un type de données particulier.
